@@ -7,11 +7,11 @@ Simple HTTP Database Server for IoT Projects
 http://[HOSTNAME]:[PORT]/http/?[OPTION1]&[OPTION2]&[...]
 
 ## OPTIONS
-u=[USER]	-	Username input		(not allowed: '=', '%', ' ')
-k=[KEY]		-	Key input		(not allowed: '=', '%', ' ')
-v=[VAR]		-	Select variable		(not allowed: '=', '%', ' ')
-a=[ACTION]	-	Select action		(not allowed: '=', '%', ' ')
-c=[CONTENT]	-	Set (new) content	(not allowed: '=', '%', ' ')
+### u=[USER]	-	Username input		(not allowed: '=', '%', ' ')
+### k=[KEY]		-	Key input		(not allowed: '=', '%', ' ')
+### v=[VAR]		-	Select variable		(not allowed: '=', '%', ' ')
+### a=[ACTION]	-	Select action		(not allowed: '=', '%', ' ')
+### c=[CONTENT]	-	Set (new) content	(not allowed: '=', '%', ' ')
 
 ## ACTIONS
 ### r	-	read		-	read selected variable
