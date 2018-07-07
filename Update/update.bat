@@ -1,3 +1,4 @@
+sleep 4
 cd ..
 del %1
 copy Update\%1 %1
