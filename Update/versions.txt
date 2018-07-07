@@ -1,1 +1,1 @@
-IoT Database Server.exe=1;
+IoT Database Server.exe=2;
