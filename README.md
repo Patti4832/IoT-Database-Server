@@ -7,7 +7,7 @@ Simple HTTP Database Server for IoT Projects
 # Documentation
 
 ## USAGE
-http://[HOSTNAME]:[PORT]/http/?[OPTION1]&[OPTION2]&[...]
+##GET	###http://[HOSTNAME]:[PORT]/http/?[OPTION1]&[OPTION2]&[...]
 
 ## OPTIONS
 ### u=[USER]	-	Username input		(not allowed: '=', '%', ' ')
@@ -25,16 +25,16 @@ http://[HOSTNAME]:[PORT]/http/?[OPTION1]&[OPTION2]&[...]
 
 ## EXAMPLE
 ### Read [VAR]:
-	http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=r&v=[VAR]
+##GET	###http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=r&v=[VAR]
 
 ### Create [VAR] with [CONTENT]:
-	http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=n&v=[VAR]&c=[CONTENT]
+##GET	###http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=n&v=[VAR]&c=[CONTENT]
 
 ### List all variables:
-	http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=l
+##GET	###http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=l
 
 ### Delete [VAR]:
-	http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=d&v=[VAR]
+##GET	###http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=d&v=[VAR]
 
 ### Replace content of [VAR] with [CONTENT]:
-	http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=e&v=[VAR]&c=[CONTENT]
+##GET	###http://[HOSTNAME]:[PORT]/http/?u=[USER]&k=[KEY]&a=e&v=[VAR]&c=[CONTENT]
