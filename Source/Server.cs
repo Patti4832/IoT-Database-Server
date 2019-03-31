@@ -39,7 +39,7 @@ namespace IoT_Database_Server
             }
             else
             {
-                Log.Error("Can't use port '" + port + "'! Use port between 100 and 65535.");
+                Log.Error("Can't use port '" + port + "'! Use port between 10 and 65535.");
             }
         }
         public void Start()
