@@ -30,7 +30,7 @@ namespace IoT_Database_Server
         {
             string content = File.ReadAllText(Config.db_file_users);
             int counter = 0;
-            string[] lines = content.Replace("\r", "").Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
+            string[] lines = content.Replace("\r", "").Split('\n');
             users = new string[lines.Length];
             foreach (string line in lines)
             {
@@ -48,7 +48,7 @@ namespace IoT_Database_Server
 
             content = File.ReadAllText(Config.db_file_keys);
             counter = 0;
-            lines = content.Replace("\r", "").Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
+            lines = content.Replace("\r", "").Split('\n');
             keys = new string[lines.Length];
             foreach (string line in lines)
             {
