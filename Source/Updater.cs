@@ -48,9 +48,9 @@ namespace Updater
 
             int tmpCount = 0;
 
-            foreach (string s in updateFile.Replace("\n", "").Replace("\r", "").Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries))
+            foreach (string s in updateFile.Replace("\n", "").Replace("\r", "").Split(';'))
             {
-                if (versions[tmpCount] < int.Parse(s.Split(new string[] { "=" }, StringSplitOptions.RemoveEmptyEntries)[1]))
+                if (versions[tmpCount] < int.Parse(s.Split('=')[1]))
                     updateAvailable[tmpCount] = true;
                 else
                     updateAvailable[tmpCount] = false;
