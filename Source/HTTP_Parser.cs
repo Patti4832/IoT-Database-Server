@@ -80,11 +80,11 @@ namespace IoT_Database_Server
                 DateTime.Now.Year + " " +
                 DateTime.Now.ToUniversalTime().Hour + ":" + DateTime.Now.ToUniversalTime().Minute + ":" + DateTime.Now.ToUniversalTime().Second + " GMT";
             string ret =
-               "HTTP/1.1 200 OK\n" +
-               "Date: " + date + "\n" +
-               "Server: IoT-DB-Server\n" +
-               "Content-Length: " + content.Length + "\n" +
-               "Content-Type: text/html\n\n" +
+               "HTTP/1.1 200 OK\r\n" +
+               "Date: " + date + "\r\n" +
+               "Server: IoT-DB-Server\r\n" +
+               "Content-Length: " + content.Length + "\r\n" +
+               "Content-Type: text/html\r\n\r\n" +
                content + "";
             return ret;
         }
