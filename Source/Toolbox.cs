@@ -31,12 +31,12 @@ namespace IoT_Database_Server
         public static string[] GetLines(string text)
         {
             text = text.Replace("\r", "");
-            return text.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
+            return text.Split('\n');
         }
 
         public static string[] GetParts(string text)
         {
-            return text.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            return text.Split(' ');
         }
 
         public static string[] Split(string text, string splitter)
